@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">hom65Adiblar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="adiblar_nxayoti_va_ijodi">Adiblar \nxayoti va ijodi</string>
+    <string name="sozlamalar">Sozlamalar</string>
+    <string name="ulashish">Ulashish</string>
+    <string name="dastur_haqida">Dastur haqida</string>
+    <string name="_1765_1956">(1765-1956)</string>
+    <string name="adib_rasmi">Adib rasmi</string>
+    <string name="adib_ismi_familiyasi_va_otasining_ismi">Adib ismi, familiyasi va otasining ismi</string>
+    <string name="tug_ilgan_yili">Tug’ilgan yili</string>
+    <string name="vafot_etgan_yili">Vafot etgan yili</string>
+    <string name="adib_haqida_to_liq_ma_lumot">Adib haqida to’liq ma’lumot</string>
+    <string name="saqlash">Saqlash</string>
+</resources>

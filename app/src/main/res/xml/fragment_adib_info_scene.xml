@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:app="urn:oasis:names:tc:xliff:document:1.2">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="500">
+       <KeyFrameSet>
+
+       </KeyFrameSet>
+        <OnSwipe motion:touchAnchorId="@+id/scrollView_1"
+            />
+    </Transition>
+
+    //START
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/card_back"
+            motion:layout_editor_absoluteX="76dp"
+            android:id="@+id/txt_name_info"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/card3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintHorizontal_bias="0.95"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="UnusedAttribute">
+
+            <CustomAttribute
+                motion:attributeName="backgroundTint"
+                app:customColorValue="@color/white"/>
+
+        </Constraint>
+
+
+    </ConstraintSet>
+
+       //END
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/txt_name_info"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/card_back"
+            android:layout_marginStart="0dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            app:backgroundTint="@color/white"
+            app:tint="@color/white"
+            motion:layout_constraintEnd_toStartOf="@+id/card2"
+            motion:layout_constraintHorizontal_bias="0.49" />
+        <Constraint
+            android:id="@+id/card3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/kulrang"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintHorizontal_bias="0.95"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="10dp"
+            android:background="@color/kulrang"
+            android:layout_marginTop="0dp"
+            tools:ignore="UnusedAttribute" >
+
+            <CustomAttribute
+                motion:attributeName="backgroundTint"
+                app:customColorValue="@color/kulrang"/>
+
+        </Constraint>
+
+        <Constraint
+            android:id="@id/card2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp"
+            motion:layout_constraintRight_toLeftOf="@id/card3"/>
+        <Constraint
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/kulrang"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/card_back"
+            android:background="@color/kulrang"
+            tools:ignore="UnusedAttribute" />
+
+    </ConstraintSet>
+</MotionScene>

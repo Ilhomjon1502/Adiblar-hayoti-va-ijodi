@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_item">
+        <item>Mumtoz adabiyoti</item>
+        <item>O\'zbek adabiyoti</item>
+        <item>Jahon adabiyoti</item>
+    </string-array>
+</resources>
